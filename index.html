@@ -1,1 +1,141 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<title>Olivia Tran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/prof.jpg");
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidenav with image -->
+<nav class="w3-sidenav w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidenav (reveals when clicked on menu icon)-->
+<nav class="w3-sidenav w3-black w3-animate-right w3-center w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidenav">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-closenav w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+  <a href="#about" class="w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
+  <a href="#projects" class="w3-text-grey w3-hover-black" onclick="closeNav()">My Projects</a>
+  <a href="#contact" class="w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidenav -->
+  <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-padding-128 w3-center" id="home">
+    <h1 class="w3-jumbo"><b>Olivia Tran</b></h1>
+    <p>Software Engineer.</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+  </header>
+
+<!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About Me </h2>
+    <hr class="w3-opacity">
+    <p>Hello!
+      <br> My name is Olivia Tran and I am a recent graduate from the University of California, San Diego with a degree in Computer Science. I am driven by the opportunity to develop my skills in a challenging and creative environment. I have a passion for product design and my goal is to bridge the gap between software engineering and product management to deliver phenomenal experiences to users. <br><br> 
+
+      My past experience as an intern at Workday, Inc, recruitment chair for an engineering organization, and a member on multiple engineering teams over the years has made me more confident working with others and cross-functionally. I am frequently able to put myself in other people's shoes and know that by ability to do that enables me to contribute and help build stronger product for customers. <br><br>
+
+      On my free time I love to cook, workout, and play with my dogs.
+    </p>
+
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Java</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:95%">
+        <div class="w3-center w3-text-white">95%</div>
+      </div>
+    </div>
+    <p class="w3-wide">C++</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:85%">
+        <div class="w3-center w3-text-white">85%</div>
+      </div>
+    </div>
+    <p class="w3-wide">C</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:80%">
+        <div class="w3-center w3-text-white">80%</div>
+      </div>
+    </div><br>
+
+    <button class="w3-btn w3-light-grey w3-padding-large w3-section">
+      <a href = "images/OliviaTranResume.pdf"> <i class="fa fa-download"></i> View Resume </a>
+    </button>
+
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="projects">
+    <h2 class="w3-text-grey">My Projects</h2>
+    <hr class="w3-opacity">
+
+    <a href = "https://medium.com/@oliviaatran/inspire-grow-contribute-fdada03d7ff6"><p style="text-align:center;"><img src="images/igc.jpg"></p></a>
+    <br>
+    <a href = "https://medium.com/@oliviaatran/everyone-rich-dd1c78370e9f"><p style="text-align:center;"><img src="images/evRich.jpg"></p></a>
+    <br>
+    <a href = "https://medium.com/@oliviaatran/tempo-90a8e5bc0023"><p style="text-align:center;"><img src="images/tempo.jpg"></p></a>
+    
+  <!-- End Portfolio Section -->
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>San Diego, CA</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 619-905-1093</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>otran@ucsd.edu</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href = "https://www.pinterest.com/oliviaatran/"><i class="fa fa-pinterest-p w3-hover-text-red"></i></a>
+    <a href = "https://github.com/otran"><i class="fa fa-github w3-hover-text-gray"></i></a>
+    <a href = "https://www.linkedin.com/in/otran"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+
+// Open and close sidenav
+function openNav() {
+    document.getElementById("mySidenav").style.width = "60%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</body>
+</html>
